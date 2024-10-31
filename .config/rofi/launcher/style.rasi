@@ -1,11 +1,8 @@
 /*****----- Configuration -----*****/
 configuration {
     modi:                       "drun";
+    display-drun:               ">";
     show-icons:                 false;
-    display-drun:               "";
-    display-run:                "";
-    display-filebrowser:        "";
-    display-window:             "";
     drun-display-format:        "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
     window-format:              "{w} · {c} · {t}";
 }
@@ -21,7 +18,7 @@ configuration {
 }
 
 * {
-    font: "Iosevka Nerd Font 10";
+    font: "Iosevka Nerd Font 8";
 }
 
 * {
