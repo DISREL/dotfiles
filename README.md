@@ -24,3 +24,4 @@
 - noto-fonts
 ### Optional
 - neofetch
+- tlp (move config to /etc/)
