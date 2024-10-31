@@ -95,7 +95,7 @@ bindsym $mod+d exec --no-startup-id "~/.config/rofi/launcher/launcher.sh"
 # rofi powermenu
 bindsym $mod+Shift+e exec --no-startup-id "~/.config/rofi/powermenu/powermenu.sh"
 
-bindsym $mod+Shift+Return exec --no-startup-id firefox
+bindsym $mod+Shift+Return exec --no-startup-id "/opt/google/chrome/chrome"
 
 # screenshot bindings using flameshot, xclip, maim
 # launch flameshot
