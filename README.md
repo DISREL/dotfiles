@@ -7,6 +7,7 @@
 - picom
 - rofi
 - alacritty
+- zscroll (yay)
 ## Packages Needed
 ### Internals
 - thunar
@@ -17,7 +18,7 @@
 - flameshot
 ### Fonts
 - ttf-firacode-nerd
-- ttf-saucecodepro-nerd
+- ttf-sourcecodepro-nerd
 - ttf-iosevka-nerd
 - ttf-iosevkaterm-nerd
 - ttf-iosevkatermslab-nerd
