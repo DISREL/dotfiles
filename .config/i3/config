@@ -173,7 +173,7 @@ client.focused #4c7899 #285577 #ffffff #285577 #285577
 default_border pixel 2
 
 # gaps
-gaps inner 5px
+gaps inner 4px
 gaps outer 4px
 
 smart_gaps on
