@@ -7,6 +7,7 @@
 - picom
 - rofi
 - alacritty
+- starship
 - zscroll (yay)
 ## Packages
 ### Internals
