@@ -21,11 +21,8 @@
 - pulsemixer
 - flameshot
 ### Fonts
+- otf-firamono-nerd
 - ttf-firacode-nerd
-- ttf-sourcecodepro-nerd
-- ttf-iosevka-nerd
-- ttf-iosevkaterm-nerd
-- ttf-iosevkatermslab-nerd
 - noto-fonts
 ### Optional/Flavor
 - tlp (sudo cp ~/.config/tlp.conf /etc/tlp.conf)
