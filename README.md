@@ -1,7 +1,7 @@
 # Dotfiles - Ricemeister
 ### My dotfiles for Lenovo Thinkpad X1 Carbon (4K)
----
 ## Details
+- arch (btw...)
 - i3
 - polybar
 - picom
@@ -14,8 +14,11 @@
 - thunar
 - nitrogen
 - brightnessctl
+- pipewire
+- pipewire-pulse
+- pipewire-alsa
+- wireplumber
 - pulsemixer
-- pulseaudio
 - flameshot
 ### Fonts
 - ttf-firacode-nerd
@@ -33,7 +36,8 @@
 - qbittorrent
 - vscode
 - filezilla
+- google-chrome
 - p7zip-gui (yay)
 - vesktop (yay)
-## Other Commands
+## Commands
 - `xdg-settings set default-web-browser google-chrome.desktop`
