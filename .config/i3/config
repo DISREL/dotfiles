@@ -173,8 +173,10 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-client.focused #4c7899 #285577 #ffffff #285577 #285577
+client.focused #ff8080 #45363680 #ffffff #45363680 #45363680
+client.unfocused #00000000 #00000000 #00000000 #00000000 #00000000
 default_border pixel 2
+
 
 # gaps
 gaps inner 4px
