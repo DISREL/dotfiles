@@ -4,10 +4,6 @@ iatest=$(expr index "$-" i)
 #######################################################
 # SOURCED ALIAS'S AND SCRIPTS BY zachbrowne.me
 #######################################################
-if [ -f /usr/bin/fastfetch ]; then
-	fastfetch
-fi
-
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
@@ -594,6 +590,11 @@ if [[ $- == *i* ]]; then
 fi
 
 export PATH=$PATH:"$HOME/.local/bin:$HOME/.cargo/bin:/var/lib/flatpak/exports/bin:/.local/share/flatpak/exports/bin"
+
+# NOTE: Fastfetch moved for less glitchy rendering
+#if [ -f /usr/bin/fastfetch ]; then
+#        fastfetch
+#fi
 
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
