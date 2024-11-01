@@ -34,3 +34,5 @@
 - filezilla
 - p7zip-gui (yay)
 - vesktop (yay)
+## Other Commands
+- `xdg-settings set default-web-browser google-chrome.desktop`
