@@ -99,7 +99,7 @@ bindsym $mod+Shift+Return exec --no-startup-id "/opt/google/chrome/chrome"
 
 # screenshot bindings using flameshot, xclip, maim
 # launch flameshot
-bindsym Print exec --no-startup-id "flameshot gui"
+bindsym $mod+Print exec --no-startup-id "flameshot gui"
 
 #####################################################################################################################
 #################                          bar toggle                                               #################
