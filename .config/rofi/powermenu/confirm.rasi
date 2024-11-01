@@ -14,7 +14,7 @@ configuration {
 }
 
 * {
-    font: "JetBrains Mono Nerd Font 12";
+    font: "JetBrains Mono Nerd Font 8";
 }
 
 /*****----- Main Window -----*****/

@@ -8,4 +8,5 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
-export $(envsubst < .env)
+export BROWSER=/opt/google/chrome/chrome
+export EDITOR=nano
