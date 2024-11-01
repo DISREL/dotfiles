@@ -40,7 +40,6 @@ shopt -s checkwinsize
 
 # Causes bash to append to history instead of overwriting it so if you start a new terminal, you have old session history
 shopt -s histappend
-PROMPT_COMMAND='history -a'
 
 # set up XDG folders
 export XDG_DATA_HOME="$HOME/.local/share"
@@ -622,5 +621,6 @@ fi
 
 export PATH=$PATH:"$HOME/.local/bin:$HOME/.cargo/bin:/var/lib/flatpak/exports/bin:/.local/share/flatpak/exports/bin"
 
+PROMPT_COMMAND="history -a && export PROMTP_COMMAND=echo"
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
