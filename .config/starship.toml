@@ -1,39 +1,165 @@
-[character]
-error_symbol = "[>](bold orange)"
-success_symbol = "[>](bold red)"
+format = """\
+[╭╴](fg:arrow)\
+$username\
+$os\
+$git_branch\
+(\
+    at \
+    $directory\
+)\
+$cmd_duration\
+(\
+    via \
+    $python\
+    $conda\
+    $nodejs\
+    $c\
+    $rust\
+    $java\
+)
+[╰─](fg:arrow)$character\
+"""
+# Add the modules you need
 
-[cmd_duration]
-style = "bold yellow"
+# Disable the blank line at the start of the prompt
+add_newline = true
 
-[directory]
-style = "bold red"
 
-[git_branch]
-style = "bold pink"
+palette = "normal"
 
-[git_status]
-style = "bold green"
 
-[hostname]
-style = "bold purple"
+[palettes.normal]
+arrow = "#d9d9d9"
+os = "#ff3300"
+os_admin = "#ff6633"
+directory = "#ffcc99"
+time = "#bdfffd"
+node = "#a5e6ba"
+git = "#f17f29"
+git_status = "#DFEBED"
+python = "#edf67d"
+conda = "#70e000"
+java = "#F86279"
+rust = "#ffdac6"
+clang = "#caf0f8"
+duration = "#ffcc00"
+text_color = "#EDF2F4"
+text_light = "#26272A"
+
+# I disabled some modules (Rust, Java...) since some things aren't installed in my machine, enable them if you need.
 
 [username]
-format = "[$user]($style) on "
-style_user = "bold cyan"
+style_user = 'bold os'
+style_root = 'bold os_admin'
+format = '[> $user](fg:$style) '
+disabled = false
+show_always = true
 
-# Use the color palette
-palette = "dracula"
+[os]
+format = "on [($name)]($style) "
+style = "bold blue"
+disabled = true
 
-# Define Dracula color palette
-[palettes.dracula]
-background = "#282a36"
-current_line = "#44475a"
-foreground = "#f8f8f2"
-comment = "#6272a4"
-cyan = "#8be9fd"
-green = "#50fa7b"
-orange = "#ffb86c"
-pink = "#ff79c6"
-purple = "#bd93f9"
-red = "#ff5555"
-yellow = "#f1fa8c"
+[os.symbols]
+Alpine = " "
+Arch = " "
+Debian = " "
+EndeavourOS = " "
+Fedora = " "
+Linux = " "
+Macos = " "
+Manjaro = " "
+Mint = " "
+NixOS = " "
+openSUSE = " "
+Pop = " "
+SUSE = " "
+Ubuntu = " "
+Windows = " "
+
+[character]
+success_symbol = "[󰍟](fg:arrow)"
+error_symbol = "[󰍟](fg:red)"
+
+[directory]
+format = "[$path](bold $style)[$read_only]($read_only_style) "
+truncation_length = 2
+style = "fg:directory"
+read_only_style = "fg:directory"
+before_repo_root_style = "fg:directory"
+truncation_symbol = "…/"
+truncate_to_repo = true
+read_only ="  "
+
+[time]
+disabled = true
+format = "at [󱑈 $time]($style)"
+time_format = "%H:%M"
+style = "bold fg:time"
+
+[cmd_duration]
+format = "took [ $duration]($style) "
+style = "bold fg:duration"
+min_time = 500
+
+[git_branch]
+format = "via [$symbol$branch]($style) "
+style = "bold fg:git"
+symbol = " "
+
+[git_status]
+format = '[ $all_status$ahead_behind ]($style)'
+style = "fg:text_color bg:git"
+disabled = true
+
+[docker_context]
+disabled=true
+symbol = " "
+
+[package]
+disabled=true
+
+[fill]
+symbol = " "
+
+#[nodejs]
+#format = "[ $symbol$version ]($style)"
+#style = "bg:node fg:text_light"
+#symbol = " "
+#version_format = "${raw}"
+#disabled=false
+
+[python]
+disabled=false
+format = '[ ${symbol}${pyenv_prefix}(${version})( \($virtualenv\)) ]($style)'
+symbol = " "
+version_format = "${raw}"
+style = "bg:python fg:text_light"
+
+#[conda]
+#format = "[ $symbol$environment ]($style)"
+#style = "bg:conda fg:text_light"
+#ignore_base = false
+#disabled = false
+#symbol = " "
+
+#[java]
+#format = "[ $symbol$version ]($style)"
+#style = "bg:java fg:text_light"
+#version_format = "${raw}"
+#symbol = " "
+#disabled = true
+
+[c]
+format = "[ $symbol($version(-$name)) ]($style)"
+style = "bg:clang fg:text_light"
+symbol = " "
+version_format = "${raw}"
+disabled=true
+
+[rust]
+format ="[ $symbol$version ]($style)"
+style = "bg:rust fg:text_light"
+symbol = " "
+version_format = "${raw}"
+disabled=true
