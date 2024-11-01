@@ -8,7 +8,7 @@
 - rofi
 - alacritty
 - zscroll (yay)
-## Packages Needed
+## Packages
 ### Internals
 - thunar
 - nitrogen
@@ -23,6 +23,14 @@
 - ttf-iosevkaterm-nerd
 - ttf-iosevkatermslab-nerd
 - noto-fonts
-### Optional
-- neofetch
-- tlp (move config to /etc/)
+### Optional/Flavor
+- tlp (sudo cp ~/.config/tlp.conf /etc/tlp.conf)
+- jre-openjdk
+- gimp
+- vlc
+- spotify-launcher
+- qbittorrent
+- vscode
+- filezilla
+- p7zip-gui (yay)
+- vesktop (yay)
