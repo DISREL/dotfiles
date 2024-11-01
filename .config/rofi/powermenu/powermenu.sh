@@ -10,8 +10,8 @@ host=`hostname`
 # Options
 shutdown='Shutdown'
 reboot='Reboot'
-lock='Lock Screen'
-suspend='Sleep'
+lock='Lock'
+suspend='Suspend'
 logout='Logout'
 yes='Yes'
 no='No'
@@ -55,7 +55,7 @@ run_cmd() {
 		elif [[ $1 == '--suspend' ]]; then
 			mpc -q pause
 			amixer set Master mute
-			systemctl suspend
+			systemctl hybrid-sleep
 		elif [[ $1 == '--logout' ]]; then
 		        i3-msg exit
 		fi
@@ -74,11 +74,7 @@ case ${chosen} in
 		run_cmd --reboot
         ;;
     $lock)
-		if [[ -x '/usr/bin/betterlockscreen' ]]; then
-			betterlockscreen -l
-		elif [[ -x '/usr/bin/i3lock' ]]; then
-			i3lock
-		fi
+		dm-tool lock
         ;;
     $suspend)
 		run_cmd --suspend
