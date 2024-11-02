@@ -86,18 +86,14 @@ bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
-# Make the currently focused window a scratchpad
-bindsym $mod+Shift+minus move scratchpad
-
-# Show the first scratchpad window
-bindsym $mod+minus scratchpad show
-
 # rofi applauncher
 bindsym $mod+d exec --no-startup-id "~/.config/rofi/launcher/launcher.sh"
 # rofi powermenu
 bindsym $mod+Shift+e exec --no-startup-id "~/.config/rofi/powermenu/powermenu.sh"
 
 bindsym $mod+Shift+Return exec --no-startup-id "/opt/google/chrome/google-chrome"
+
+bindsym $mod+Shift+o exec --no-startup-id flatpak run md.obsidian.Obsidian
 
 # launch flameshot
 bindsym $mod+Print exec --no-startup-id "flameshot gui"

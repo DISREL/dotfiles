@@ -6,7 +6,7 @@
 ![3](./images/3.png?raw=true)
 ![4](./images/4.png?raw=true)
 ## Details
-- arch (btw...)
+- arch
 - i3
 - polybar
 - picom
@@ -24,23 +24,25 @@
 - pipewire-alsa
 - wireplumber
 - pulsemixer
-- flameshot
+- systemd-git (yay)
+- tlp (sudo cp ~/.config/tlp.conf /etc/tlp.conf)
 ### Fonts
 - otf-firamono-nerd
 - ttf-firacode-nerd
 - noto-fonts
 ### Optional/Flavor
-- tlp (sudo cp ~/.config/tlp.conf /etc/tlp.conf)
 - jre-openjdk
 - gimp
 - vlc
-- spotify-launcher
 - qbittorrent
-- vscode
 - filezilla
+- vscode
 - google-chrome
+- spotify-launcher
+- flameshot
 - p7zip-gui (yay)
 - slack-desktop (yay)
 - dev.vencord.Vesktop (flatpak)
+- dev.obsidian.Obsidian (flatpak)
 ## Commands
 - `xdg-settings set default-web-browser google-chrome.desktop`
