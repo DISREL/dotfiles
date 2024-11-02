@@ -1,11 +1,21 @@
-# Dotfiles - Ricemeister
-### My dotfiles for Lenovo Thinkpad X1 Carbon (4K)
+# Dotfiles
+My dotfiles for Lenovo Thinkpad X1 Carbon (Gen 9)
+Some quick details about this rice:
+- OS - EndeavourOS (Arch btw...)
+- Window Manager - i3wm
+- Bar - polybar (zscroll for controlling media)
+- Compositor - picom
+- Launcher - rofi
+- Terminal - alacritty (with starship)
+I am aiming this rice to be dedicated to the Thinkpad as it's my research laptop and essentially helps me learn how Linux works.
+Submit a pull request if you think a change would be nice. I did the base in 2 days so DON'T DRILL MY ASS kekw :P
 ## Screenshots
 ![1](./images/1.png?raw=true)
 ![2](./images/2.png?raw=true)
 ![3](./images/3.png?raw=true)
 ![4](./images/4.png?raw=true)
-## Details
+## Packages
+### Base
 - arch
 - i3
 - polybar
@@ -13,8 +23,6 @@
 - rofi
 - alacritty
 - starship
-- zscroll (yay)
-## Packages
 ### Internals
 - thunar
 - nitrogen
@@ -28,6 +36,7 @@
 - tlp-rdw
 - acpi_call-dkms
 - thermald
+- zscroll (yay)
 - systemd-git (yay)
 ### Fonts
 - otf-firamono-nerd
