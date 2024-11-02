@@ -67,10 +67,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod+Alt+Left move left
+bindsym $mod+Alt+Down move down
+bindsym $mod+Alt+Up move up
+bindsym $mod+Alt+Right move right
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -96,7 +96,8 @@ bindsym $mod+Shift+Return exec --no-startup-id "/opt/google/chrome/google-chrome
 bindsym $mod+Shift+o exec --no-startup-id flatpak run md.obsidian.Obsidian
 
 # launch flameshot
-bindsym $mod+Print exec --no-startup-id "flameshot gui"
+bindsym $mod+Print exec --no-startup-id "flameshot gui --clipboard --path ~/Pictures"
+bindsym Print exec --no-startup-id "flameshot full --clipboard --path ~/Pictures"
 
 #####################################################################################################################
 #################                          bar toggle                                               #################
@@ -128,19 +129,19 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 
 # move window to workspace
-bindsym $mod+ctrl+1 move window to workspace number $ws1; workspace number $ws1
-bindsym $mod+ctrl+2 move window to workspace number $ws2; workspace number $ws2
-bindsym $mod+ctrl+3 move window to workspace number $ws3; workspace number $ws3
-bindsym $mod+ctrl+4 move window to workspace number $ws4; workspace number $ws4
-bindsym $mod+ctrl+5 move window to workspace number $ws5; workspace number $ws5
-bindsym $mod+ctrl+6 move window to workspace number $ws6; workspace number $ws6
-bindsym $mod+ctrl+7 move window to workspace number $ws7; workspace number $ws7
-bindsym $mod+ctrl+8 move window to workspace number $ws8; workspace number $ws8
-bindsym $mod+ctrl+9 move window to workspace number $ws9; workspace number $ws9
+bindsym $mod+Shift+1 move window to workspace number $ws1; workspace number $ws1
+bindsym $mod+Shift+2 move window to workspace number $ws2; workspace number $ws2
+bindsym $mod+Shift+3 move window to workspace number $ws3; workspace number $ws3
+bindsym $mod+Shift+4 move window to workspace number $ws4; workspace number $ws4
+bindsym $mod+Shift+5 move window to workspace number $ws5; workspace number $ws5
+bindsym $mod+Shift+6 move window to workspace number $ws6; workspace number $ws6
+bindsym $mod+Shift+7 move window to workspace number $ws7; workspace number $ws7
+bindsym $mod+Shift+8 move window to workspace number $ws8; workspace number $ws8
+bindsym $mod+Shift+9 move window to workspace number $ws9; workspace number $ws9
 
 # move using arrow
-bindsym $mod+ctrl+Right workspace next
-bindsym $mod+ctrl+Left workspace prev
+bindsym $mod+Shift+Right workspace next
+bindsym $mod+Shift+Left workspace prev
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

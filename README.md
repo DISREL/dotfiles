@@ -26,6 +26,8 @@
 - pulsemixer
 - systemd-git (yay)
 - tlp (sudo cp ~/.config/tlp.conf /etc/tlp.conf)
+- tlp-rdw
+- acpi_call-dkms
 ### Fonts
 - otf-firamono-nerd
 - ttf-firacode-nerd
