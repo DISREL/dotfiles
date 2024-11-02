@@ -40,6 +40,7 @@
 - filezilla
 - google-chrome
 - p7zip-gui (yay)
-- vesktop (yay)
+- slack-desktop (yay)
+- dev.vencord.Vesktop (flatpak)
 ## Commands
 - `xdg-settings set default-web-browser google-chrome.desktop`

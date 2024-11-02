@@ -192,7 +192,9 @@ floating_maximum_size 1500 x 1500
 exec --no-startup-id picom
 exec --no-startup-id nitrogen --set-auto $HOME/.config/nitrogen/wallpaper.png
 exec --no-startup-id $HOME/.config/polybar/scripts/launch.sh
-exec --no-startup-id vesktop --start-minimized
+
+# Startup - User Apps
+exec --no-startup-id flatpak run dev.vencord.Vesktop
 exec --no-startup-id spotify-launcher --no-exec
 exec --no-startup-id 1password --silent
 exec --no-startup-id slack -u
