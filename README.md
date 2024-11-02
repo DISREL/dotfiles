@@ -28,6 +28,7 @@
 - tlp (sudo cp ~/.config/tlp.conf /etc/tlp.conf)
 - tlp-rdw
 - acpi_call-dkms
+- thermald
 ### Fonts
 - otf-firamono-nerd
 - ttf-firacode-nerd
@@ -46,5 +47,9 @@
 - slack-desktop (yay)
 - dev.vencord.Vesktop (flatpak)
 - dev.obsidian.Obsidian (flatpak)
-## Commands
-- `xdg-settings set default-web-browser google-chrome.desktop`
+## Notes
+- To change default web browser - `xdg-settings set default-web-browser google-chrome.desktop`
+- To generate thermald config files - `sudo ~/.config/dptfxtract/dptfxtract`
+- Modify `/usr/lib/systemd/system/thermald.service`
+    - Remove `--adaptive` to use the configuration files generated with dptfxtract so that thermald works even if the CPU model is unsupported.
+    - Add `--exclusive-control` to prevent the aggressive throttling.
