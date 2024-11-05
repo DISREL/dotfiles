@@ -37,8 +37,7 @@ Submit a pull request if you think a change would be nice. I did the base in 2 d
 - pipewire-alsa
 - wireplumber
 - pulsemixer
-- tlp
-- tlp-rdw
+- power-profiles-daemon
 - acpi_call-dkms
 - thermald
 - zscroll (yay)
