@@ -30,7 +30,7 @@ Submit a pull request if you think a change would be nice. I did the base in 2 d
 - starship
 ### Internals
 - thunar
-- nitrogen
+- feh
 - brightnessctl
 - pipewire
 - pipewire-pulse
